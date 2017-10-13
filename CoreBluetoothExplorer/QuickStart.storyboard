@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N5G-GB-Xvg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quick Start View Controller-->
+        <scene sceneID="TdH-1u-H2R">
+            <objects>
+                <viewController id="N5G-GB-Xvg" customClass="QuickStartViewController" customModule="CoreBluetoothExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u5W-5S-gQB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObE-VY-66e">
+                                <rect key="frame" x="164" y="290.5" width="46" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ObE-VY-66e" firstAttribute="centerY" secondItem="u5W-5S-gQB" secondAttribute="centerY" id="4Pv-ZA-I4Y"/>
+                            <constraint firstItem="ObE-VY-66e" firstAttribute="centerX" secondItem="u5W-5S-gQB" secondAttribute="centerX" id="PCY-jh-3wl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lpp-Zg-lws"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="ObE-VY-66e" id="sTQ-Or-FMa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qH2-xD-Gef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-590" y="-228"/>
+        </scene>
+    </scenes>
+</document>

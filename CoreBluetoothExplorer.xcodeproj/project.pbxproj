@@ -12,6 +12,13 @@
 		CF2B4BC11F89022800EE04D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2B4BBF1F89022800EE04D3 /* Main.storyboard */; };
 		CF2B4BC31F89022800EE04D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2B4BC21F89022800EE04D3 /* Assets.xcassets */; };
 		CF2B4BC61F89022800EE04D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2B4BC41F89022800EE04D3 /* LaunchScreen.storyboard */; };
+		CF2B4BD11F89035C00EE04D3 /* CharacteristicsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B4BCE1F8902CA00EE04D3 /* CharacteristicsTVC.swift */; };
+		CF2B4BD21F89035C00EE04D3 /* PeripheralsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B4BCF1F8902CA00EE04D3 /* PeripheralsTVC.swift */; };
+		CF2B4BD31F89035D00EE04D3 /* ServicesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B4BD01F8902CA00EE04D3 /* ServicesTVC.swift */; };
+		CFC75CF51F912CE000AA595E /* QuickStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC75CF41F912CE000AA595E /* QuickStart.swift */; };
+		CFC75CF71F9136B600AA595E /* QuickStartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC75CF61F9136B600AA595E /* QuickStartDelegate.swift */; };
+		CFC75CF91F91376000AA595E /* QuickStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC75CF81F91376000AA595E /* QuickStartViewController.swift */; };
+		CFC75CFB1F913A4100AA595E /* QuickStart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC75CFA1F913A4100AA595E /* QuickStart.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		CF2B4BC21F89022800EE04D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF2B4BC51F89022800EE04D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF2B4BC71F89022800EE04D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2B4BCE1F8902CA00EE04D3 /* CharacteristicsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicsTVC.swift; sourceTree = "<group>"; };
+		CF2B4BCF1F8902CA00EE04D3 /* PeripheralsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralsTVC.swift; sourceTree = "<group>"; };
+		CF2B4BD01F8902CA00EE04D3 /* ServicesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTVC.swift; sourceTree = "<group>"; };
+		CFC75CF41F912CE000AA595E /* QuickStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStart.swift; sourceTree = "<group>"; };
+		CFC75CF61F9136B600AA595E /* QuickStartDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartDelegate.swift; sourceTree = "<group>"; };
+		CFC75CF81F91376000AA595E /* QuickStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickStartViewController.swift; sourceTree = "<group>"; };
+		CFC75CFA1F913A4100AA595E /* QuickStart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuickStart.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,37 @@
 		CF2B4BBA1F89022700EE04D3 /* CoreBluetoothExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				CFC75CF31F912C8E00AA595E /* QuickStart */,
+				CF2B4BCD1F8902B400EE04D3 /* Controller */,
 				CF2B4BBB1F89022800EE04D3 /* AppDelegate.swift */,
 				CF2B4BBD1F89022800EE04D3 /* ViewController.swift */,
 				CF2B4BBF1F89022800EE04D3 /* Main.storyboard */,
+				CFC75CFA1F913A4100AA595E /* QuickStart.storyboard */,
 				CF2B4BC21F89022800EE04D3 /* Assets.xcassets */,
 				CF2B4BC41F89022800EE04D3 /* LaunchScreen.storyboard */,
 				CF2B4BC71F89022800EE04D3 /* Info.plist */,
 			);
 			path = CoreBluetoothExplorer;
+			sourceTree = "<group>";
+		};
+		CF2B4BCD1F8902B400EE04D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF2B4BCE1F8902CA00EE04D3 /* CharacteristicsTVC.swift */,
+				CF2B4BCF1F8902CA00EE04D3 /* PeripheralsTVC.swift */,
+				CF2B4BD01F8902CA00EE04D3 /* ServicesTVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFC75CF31F912C8E00AA595E /* QuickStart */ = {
+			isa = PBXGroup;
+			children = (
+				CFC75CF41F912CE000AA595E /* QuickStart.swift */,
+				CFC75CF61F9136B600AA595E /* QuickStartDelegate.swift */,
+				CFC75CF81F91376000AA595E /* QuickStartViewController.swift */,
+			);
+			path = QuickStart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +163,7 @@
 				CF2B4BC61F89022800EE04D3 /* LaunchScreen.storyboard in Resources */,
 				CF2B4BC31F89022800EE04D3 /* Assets.xcassets in Resources */,
 				CF2B4BC11F89022800EE04D3 /* Main.storyboard in Resources */,
+				CFC75CFB1F913A4100AA595E /* QuickStart.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC75CF51F912CE000AA595E /* QuickStart.swift in Sources */,
+				CF2B4BD11F89035C00EE04D3 /* CharacteristicsTVC.swift in Sources */,
 				CF2B4BBE1F89022800EE04D3 /* ViewController.swift in Sources */,
+				CF2B4BD31F89035D00EE04D3 /* ServicesTVC.swift in Sources */,
 				CF2B4BBC1F89022800EE04D3 /* AppDelegate.swift in Sources */,
+				CFC75CF91F91376000AA595E /* QuickStartViewController.swift in Sources */,
+				CFC75CF71F9136B600AA595E /* QuickStartDelegate.swift in Sources */,
+				CF2B4BD21F89035C00EE04D3 /* PeripheralsTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LWKNR2T2F;
 				INFOPLIST_FILE = CoreBluetoothExplorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CoreBluetoothExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LWKNR2T2F;
 				INFOPLIST_FILE = CoreBluetoothExplorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CoreBluetoothExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
